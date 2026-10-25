@@ -1,4 +1,3 @@
-
 from pathlib import Path
 from datetime import datetime
 import pickle
@@ -544,7 +543,7 @@ elif selection == "Scan Analysis":
                 st.markdown("#### Uploaded image")
                 st.image(
                     pil_image,
-                    use_container_width=True,
+                    use_column_width=True,
                     caption=uploaded_file.name,
                 )
                 st.caption(
@@ -827,7 +826,7 @@ elif selection == "Dataset Explorer":
             st.markdown("### Correlation matrix")
             st.image(
                 Image.open(corr_path),
-                use_container_width=True,
+                use_column_width=True,
             )
 
     with tabs[1]:
@@ -880,7 +879,7 @@ elif selection == "Dataset Explorer":
             st.image(
                 Image.open(summary_path),
                 caption="Existing CNN model summary",
-                use_container_width=True,
+                use_column_width=True,
             )
 
 
